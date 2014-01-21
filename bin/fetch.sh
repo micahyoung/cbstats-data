@@ -7,4 +7,4 @@ cd $JSONDIR
 curl http://appservices.citibikenyc.com/data2/stations.php?updateOnly=true > $FILE
 git add -A .
 git commit -m`date +%s`
-[[ -n $1 ]] && git push
+test -n "$1" && git push
